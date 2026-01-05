@@ -78,6 +78,11 @@ def on_key(event: kb.KeyboardEvent):
             ONLY_CAPSLOCK = False
             return None
 
+        elif key_name == '`':
+            kb.send('ctrl+shift+#', do_press=True, do_release=True)
+            ONLY_CAPSLOCK = False
+            return None
+
         # 其他键不做处理
         return event
 

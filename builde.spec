@@ -68,4 +68,5 @@ exe = EXE(
     upx=True,                          # 使用UPX压缩可执行文件
     console=False,                      # todo 是否显示控制台窗口 (GUI程序设为False)
     disable_windowed_traceback=False,  # 非控制台程序（console=False）崩溃时是否显示错误窗口。
+    icon=r'./logo.ico',
 )
